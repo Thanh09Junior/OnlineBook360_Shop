@@ -1,0 +1,159 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+body>header {
+    display: flex;
+    background-color: lightblue;
+    border: 15px lightblue;
+}/* Chỉnh header */
+
+/* menu1 */
+.menu1 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 25%;
+}/* Chuyển nằm ngang và độ lớn */
+
+.menu1>li>img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}/* Canh giữa tấm ảnh */
+
+/* menu2 */
+body>header>div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.menu2>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 60%;
+}/* Chuyển nằm ngang và độ lớn */
+
+.menu2>ul>li {
+    margin: 0 auto;
+}/* Canh giữa các ptử trong list */
+
+.menu2>ul>li>a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 13px;
+    font-size: 20px;
+    text-align: center;
+}/* Chỉnh cái ptử trong list */
+
+.menu2>ul>li>a:hover {
+    border-bottom: 2px solid darkblue;
+    color: darkblue;
+}/* Khi chỉ con chuột vào */
+
+/* Thanh tìm kiếm */
+.right {
+    float: right;
+}
+
+.search {
+    margin-right: auto;
+    display: flex;
+    margin: 0  auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.search>input {
+    width: 250px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+}/* Thanh search */
+
+.search>button {
+    width: 40px;
+    border: 0;
+    border-radius: 50%;
+    background-color: white;
+}/* Nút search */ 
+
+/* nav */
+body>nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ad {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ad>li>a>img {
+    width: 350px;
+    padding: 15px;
+}
+
+body>nav>div {
+    border: 3px solid lightblue;
+    margin-top: 5px;
+}
+
+/* Phần hiện sách */
+.menu_sach {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu_sach>li {
+    width: 20%;
+    padding: 5px;
+}
+
+.sach {
+    display: block;
+    list-style-type: none;
+    padding: 3px;
+    margin: 0;
+    border: 3px solid lightblue;
+    border-radius: 10px;
+}
+
+.sach>li {
+    text-align: center;
+}
+
+.sach>li>a {
+    text-decoration: none;
+}
+
+.sach>li>a>img {
+    width: 100%;
+}
+
+/* Phần cuối*/
+body>div {
+    background-color: lightblue;
+}
+
+.last {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.last>li>a {
+    text-decoration: none;
+}

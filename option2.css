@@ -1,69 +1,97 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* header */
-body>header {
-    display: flex;
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    padding-top: 1%;
     background-color: lightblue;
     border: 15px lightblue;
-}/* Chỉnh header */
+}/*Hạn chế dùng Body> vì thẻ body là bao hàm nhiều thứ */
 
+header>h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: rgb(13, 31, 227);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* menu1 */
-.menu1 {
-    list-style-type: none;
+nav>.menu1 {
     padding: 0;
     margin: 0;
-    width: 25%;
+    width: 20%;
 }/* Chuyển nằm ngang và độ lớn */
 
-.menu1>li>img {
-    display: block;
+nav>.menu1>a>img {
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
 }/* Canh giữa tấm ảnh */
 
 /* menu2 */
-body>header>div {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.menu2>ul {
-    list-style-type: none;
+nav>.menu2>ul {
     padding: 0;
     margin: 0;
     display: flex;
-    width: 60%;
+    width: 50%;
 }/* Chuyển nằm ngang và độ lớn */
 
-.menu2>ul>li {
-    margin: 0 auto;
-}/* Canh giữa các ptử trong list */
 
 .menu2>ul>li>a {
-    text-decoration: none;
-    display: block;
-    padding: 10px 13px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+    width: 110px;
 }/* Chỉnh cái ptử trong list */
 
 .menu2>ul>li>a:hover {
-    border-bottom: 2px solid darkblue;
-    color: darkblue;
+    color: rgb(30, 23, 237);
+    transition: 0.3s ease-in-out;
 }/* Khi chỉ con chuột vào */
-
+.menu2>ul>li>a:after{
+    content: '';
+    left: 0;
+    right: 0;
+    background-color: aqua;
+}
 /* Thanh tìm kiếm */
-.right {
-    float: right;
+.right{
+    margin-left: 3%;
+    width: 30%;
+}
+.right div,a{
+    display: inline-block;
+}
+
+.right>a{
+    margin-left: 5%;
 }
 
 .search {
     margin-right: auto;
     display: flex;
-    margin: 0  auto;
+    margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: white;
@@ -85,45 +113,48 @@ body>header>div {
     background-color: white;
 }/* Nút search */ 
 
-/* nav */
-body>nav {
-    width: 80%;
-    margin: 0 auto;
-}
 
+/* .Main_Content */
 .ad {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
+    padding: 2% 0 2% 0;
     margin: 0;
+
 }
 
-.ad>li>a>img {
-    width: 350px;
-    padding: 15px;
+.ad>ul{
+    display: flex;
+    justify-content: space-between;
 }
 
-body>nav>div {
+.ad>ul>li{
+    width: 30%;
+}
+
+.ad>ul>li>a>img {
+    width: 100%;
+
+}
+
+body>.Main_Content>*:not(:first-child) {
     border: 3px solid lightblue;
     margin-top: 5px;
+}
+
+
+.Category > p{
+    color:red;
 }
 
 /* Phần hiện sách */
 .menu_sach {
     display: flex;
-    list-style-type: none;
     padding: 0;
     margin: 0;
 }
-.menu_sach>li {
-    width: 20%;
-    padding: 5px;
-}
 
 .sach {
-    display: block;
-    list-style-type: none;
-    padding: 3px;
+    width: 20%;
+    padding: 5px;
     margin: 0;
     border: 3px solid lightblue;
     border-radius: 10px;
@@ -147,7 +178,6 @@ body>div {
 }
 
 .last {
-    list-style-type: none;
     padding: 0;
     margin: 0;
     margin-top: 50px;

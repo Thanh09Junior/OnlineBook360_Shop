@@ -18,4 +18,4 @@ Các extension sử dụng trong bài:
 Link sản phẩm:
 - Design: https://www.figma.com/design/eFQ2MuzAhNb4l05K1ljvhQ/BookShop360_Design?node-id=0-1&t=7M31wEsOew3Kt0AQ-1
 - Code: https://github.com/Thanh09Junior/OnlineBook360_Shop
-- Sản phẩm dự án: (Đợi up html)
+- Sản phẩm dự án: https://thanh09junior.github.io/OnlineBook360_Shop/
